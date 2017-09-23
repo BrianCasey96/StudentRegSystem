@@ -19,7 +19,7 @@ import java.time.LocalDate;
 public class CourseProgramme {
     
     private String courseName;
-    private List<String> modules;
+    private List<Module> modules;
     private LocalDate startDate;
     private LocalDate endDate;
     
@@ -27,11 +27,15 @@ public class CourseProgramme {
     //end date
     //joda Time classes, added as a dependancy
     
-    public CourseProgramme(String cName, LocalDate sDate, LocalDate eDate){
+    public CourseProgramme(String cName){ //LocalDate sDate, LocalDate eDate){
         
         this.courseName = cName; 
-        this.startDate = sDate;
-        this.endDate = eDate;
-        modules = new ArrayList<String>();
+      //  this.startDate = sDate;
+      //  this.endDate = eDate;
+        modules = new ArrayList<Module>();
+    }
+    
+    public void addModule(Module m1){
+        modules.add(m1);
     }
 }

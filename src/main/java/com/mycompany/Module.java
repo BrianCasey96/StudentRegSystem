@@ -20,13 +20,16 @@ public class Module {
     
     private String module_name;
     private String module_id;
-    private List<String> students;
+    private List<Student> students;
     
     public Module(String modname, String modID){
         
         this.module_name = modname;
         this.module_id = modID;
-        students = new ArrayList<String>();
+        students = new ArrayList<Student>();
+    }
     
+    public void addStudent(Student s1){
+        students.add(s1);
     }
 }
