@@ -30,4 +30,18 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+      <distributionManagement>  
+        <repository>
+            <id>dropbox-mvn</id>
+            <url>file://C:/Users/I330151/Dropbox/dropbox-mvn</url>
+        </repository>
+    </distributionManagement>
+    <repositories>  
+        <repository>
+            <id>dropbox-mvn</id>
+            <url>
+               https://www.dropbox.com/sh/rlbtyj3gmb5bk27/AAB2GuN1Q4hkN6gMBXHNb413a?dl=0
+            </url>
+        </repository>
+    </repositories> 
 </project>

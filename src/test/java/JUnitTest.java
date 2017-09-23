@@ -4,9 +4,7 @@
  * and open the template in the editor.
  */
 
-import com.mycompany.mavenproject1.CourseProgramme;
-import com.mycompany.mavenproject1.Module;
-import com.mycompany.mavenproject1.Student;
+import com.mycompany.Student;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
