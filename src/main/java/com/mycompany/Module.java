@@ -36,4 +36,10 @@ public class Module {
      public List<Student> getStudents(){
         return students;
     }
+    
+     @Override
+     public String toString(){
+         return this.module_name;
+     }
+     
 }
