@@ -32,4 +32,8 @@ public class Module {
     public void addStudent(Student s1){
         students.add(s1);
     }
+    
+     public List<Student> getStudents(){
+        return students;
+    }
 }

@@ -11,7 +11,7 @@ package com.mycompany;
  */
 import java.util.ArrayList;
 import java.util.List;
-import java.time.LocalDate;
+import org.joda.time.DateTime;
 /**
  *
  * @author 14502723
@@ -20,22 +20,21 @@ public class CourseProgramme {
     
     private String courseName;
     private List<Module> modules;
-    private LocalDate startDate;
-    private LocalDate endDate;
+    public DateTime startDate;
+    public DateTime endDate;
     
-    //start date 
-    //end date
-    //joda Time classes, added as a dependancy
-    
-    public CourseProgramme(String cName){ //LocalDate sDate, LocalDate eDate){
-        
+    public CourseProgramme(String cName, DateTime sDate, DateTime eDate){        
         this.courseName = cName; 
-      //  this.startDate = sDate;
-      //  this.endDate = eDate;
-        modules = new ArrayList<Module>();
+        this.startDate = sDate;
+        this.endDate = eDate;
+        this.modules = new ArrayList<Module>();
     }
-    
+   
     public void addModule(Module m1){
         modules.add(m1);
+    }
+    
+    public List<Module> getModules(){
+        return modules;
     }
 }
